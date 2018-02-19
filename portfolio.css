@@ -1,0 +1,242 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+body {
+    display: block;
+    padding-top: 3rem;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    background-color: #e9e2e1;
+}
+
+#navbar {
+    background: #e9e2e1;
+    line-height: 1.2rem;
+    font-size: 1.2em;
+    letter-spacing: 0.4rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#menuAbout {
+    align-self: center;
+    margin-right: 1.5rem;
+}
+
+#menuContact {
+    align-self: center;
+    margin-right: 1.5rem;
+}
+
+#menuProjects {
+    align-self: center;
+    margin-right: 1.5rem;
+}
+
+.nav-link {
+    color: rgb(212, 212, 212);
+}
+
+.navbar-brand {
+    color: rgb(77, 77, 77);
+}
+
+.nav-item {
+    display: flex;
+}
+
+#brand {
+    color: rgb(77, 77, 77);
+    margin-left: 2rem;
+}
+
+#about {
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #729f98;
+    color: #e9e2e1;
+    font-size: 1.3rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.3rem;
+    text-align: left;
+    text-transform: uppercase;
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    padding-left: 10rem;
+    padding-right: 12rem;
+}
+
+.profile-image {
+    display: block;
+    float: right;
+    border-radius: 50%;
+    border-width: 0.5rem;
+    border-style: solid;
+    border-color: #e9e2e1e7;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    padding-left: 10rem;
+    padding-right: 12rem;
+    background-color: #aa863a;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+.icon {
+    display: flex;
+    width: 30rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#pomodoroIcon {
+    width: 45%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#pomodoroIcon:hover {
+    animation-name: shake;
+    animation-iteration-count: 1;
+    animation-duration: 1.5s;
+}
+
+#simonIcon {
+    width: 60%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#simonIcon:hover {
+    animation-name: shake;
+    animation-iteration-count: 1;
+    animation-duration: 1.5s;
+}
+
+#calculatorIcon {
+    width: 40%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#calculatorIcon:hover {
+    animation-name: shake;
+    animation-iteration-count: 1;
+    animation-duration: 1.5s;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(-5deg);
+    }
+    30% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
+    60% {
+        transform: rotate(15deg);
+    }
+    70% {
+        transform: rotate(-15deg);
+    }
+    80% {
+        transform: rotate(5deg);
+    }
+    90% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#xIcon {
+    position: relative;
+    top: 2rem;
+    left: -3rem;
+    width: 30%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#oIcon {
+    position: relative;
+    top: -3rem;
+    left: 3rem;
+    width: 30%;
+}
+
+.ticIcons:hover {
+    animation-name: shake;
+    animation-iteration-count: 1;
+    animation-duration: 1.5s;
+}
+
+a {
+    color: #e9e2e1;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    text-align: center;
+}
+
+a:hover {
+    color: #e9e2e1;
+    text-decoration-line: none;
+}
+
+a:active {
+    color: #e9e2e1;
+    text-decoration-line: none;
+}
+
+a:focus {
+    color: #e9e2e1;
+    text-decoration-line: none;
+}
+
+#contact {
+    
+    margin: auto;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    
+    background-color: #283018;
+    box-shadow: inset 7px 7px 40px 0 rgba(0, 0, 0, 0.383);
+
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 1.2rem;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    color: #e9e2e1b7;
+}
+
+.fa-linkedin-in, .fa-codepen{
+     color: #aa863a;
+}

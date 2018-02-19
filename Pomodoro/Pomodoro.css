@@ -1,0 +1,369 @@
+body {
+    display: block;
+    margin: auto;
+    padding-top: 3rem;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    background-color: #aa863a;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    /* background-image: url("images/doodles.png");
+    background-repeat: repeat;
+    background-blend-mode: multiply; */
+}
+
+#title {
+    color: #e9e2e1;
+    font-size: 1rem;
+    letter-spacing: 0.4rem;
+    text-align: center;
+}
+
+hr {
+    width: 10rem;
+    border-style: solid;
+    background-color: #e9e2e1;
+    margin-bottom: 4rem;
+}
+
+.circle {
+    /* opacity: 0.8; */
+    width: 30rem;
+    height: 30rem;
+    background: #AA4E3A;
+    /* background-image: url("images/circles-and-roundabouts.png");
+    /* background-repeat: repeat; */
+    /* background-blend-mode: multiply; */
+    border-radius: 45%;
+    box-shadow: 
+    0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+    0 6px 20px 0 rgba(0, 0, 0, 0.19), 
+    inset -2px -2px 5px rgba(0, 0, 0, 0.377);
+}
+
+#details {
+    color: #283018;
+    font-size: 0.9rem;
+    letter-spacing: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+#mode {
+    padding-bottom: 2rem;
+}
+
+#operators {
+    padding-bottom: 2rem;
+}
+
+svg {
+    opacity: 0.8;
+    filter: drop-shadow(2px 2px 0.5px #283018);
+    color: #7D863A;
+    cursor: pointer; 5  /  4 
+
+}
+
+svg:active {
+    opacity: 0.8;
+    filter: none;
+    color: #55C5A1;
+}
+
+#currentStatus {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+#startStop {
+    padding-bottom: 2rem;
+}
+
+.leaf {
+    width: 5rem;
+}
+
+#t1 {
+    width: 4.5rem;
+    animation-name: shakeLeaf1;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    position: relative;
+    left: 6rem;
+    top: -1.5rem;
+    filter: drop-shadow(2px 2px 2px #2830188c);
+    z-index: 1;
+    /* filter: drop-shadow(2px 4px px #283018);
+    filter: drop-shadow(4px 10px 8px #283018); */
+}
+
+@keyframes shakeLeaf1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(20deg);
+    }
+    70% {
+        transform: rotate(10deg);
+    }
+    90% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#t2 {
+    /* width: 5.5; */
+    animation-name: shakeLeaf2;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    position: relative;
+    top: -2rem;
+    left: 3rem;
+    filter: drop-shadow(2px 2px 2px #2830188c);
+
+}
+
+@keyframes shakeLeaf2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    60% {
+        transform: rotate(-20deg);
+    }
+    70% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#t3 {
+    animation-name: shakeLeaf3;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+    position: relative;
+    top: -2.3rem;
+    left: 0rem;
+    filter: drop-shadow(2px 2px 2px #2830188c);
+    z-index: 1;
+}
+
+@keyframes shakeLeaf3 {
+    0% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    70% {
+        transform: rotate(-25deg);
+    }
+    90% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#t4 {
+    /* width: 5.5rem; */
+    animation-name: shakeLeaf4;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    position: relative;
+    top: -2rem;
+    left: -3rem;
+    filter: drop-shadow(2px 2px 2px #2830188c);
+
+}
+
+@keyframes shakeLeaf4 {
+    0% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    70% {
+        transform: rotate(5deg);
+    }
+    90% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#t5 {
+    width: 4.5rem;
+    animation-name: shakeLeaf5;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    position: relative;
+    top: -1.8rem;
+    left: -5.5rem;
+    filter: drop-shadow(2px 2px 2px #2830188c);
+    z-index: 1;
+}
+
+@keyframes shakeLeaf5 {
+    0% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    70% {
+        transform: rotate(20deg);
+    }
+    90% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#elapsing {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    max-height: 3rem;
+    text-align: center;
+    z-index:1;
+    margin-bottom: 0rem;
+}
+
+#triangles-bottom{
+    transform: rotate(180deg);
+    position: relative;
+    left: 0rem;
+    bottom: -6rem;
+    z-index: 2;
+    margin-top: -1rem;
+}
+
+#t6 {
+    width: 4.5rem;
+    animation-name: shakeLeaf6;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    position: relative;
+    top: 3.5rem;
+    left: 10rem;
+    filter: drop-shadow(-2px -2px 2px #2830188c);
+    z-index: 1;
+}
+
+@keyframes shakeLeaf6 {
+    0% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    70% {
+        transform: rotate(-5deg);
+    }
+    90% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#t7 {
+    
+    animation-name: shakeLeaf7;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    position: relative;
+    top: 3.3rem;
+    left: 6rem;
+    filter: drop-shadow(-2px -2px 2px #2830188c);
+    
+
+}
+
+@keyframes shakeLeaf7 {
+    0% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    70% {
+        transform: rotate(5deg);
+    }
+    90% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#t8 {
+    width: 4rem;
+    animation-name: shakeLeaf8;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    position: relative;
+    top: 3.5rem;
+    left: 2.5rem;
+    filter: drop-shadow(-2px -2px 2px #2830188c);
+    z-index: 1;
+}
+
+@keyframes shakeLeaf8 {
+    0% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    70% {
+        transform: rotate(5deg);
+    }
+    90% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
