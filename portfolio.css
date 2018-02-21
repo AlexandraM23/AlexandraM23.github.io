@@ -12,9 +12,9 @@ body {
 
 #navbar {
     background: #e9e2e1;
-    line-height: 1.2rem;
+    line-height: 1.2em;
     font-size: 1.2em;
-    letter-spacing: 0.4rem;
+    letter-spacing: 0.4em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -78,8 +78,8 @@ body {
     margin-right: 1vw;
     margin-left: 2vw;
     width: 100%;
-    font-size: 1.5vw;;
     color: #e9e2e1;
+    font-size: 1.5vw;
     text-transform: uppercase;
     line-height: 220%;
     letter-spacing: 0.3em;

@@ -1,37 +1,52 @@
 body {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin: auto;
-    padding-top: 3rem;
     font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
     background-color: #aa863a;
     text-transform: uppercase;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.8vw;
     color: #e9e2e1;
+}
+
+.row {
+    text-align: center;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.circle {
+    width: 10vw;
+    height: 33vw;
+    background: #283018;
+    border-radius: 50%;
+    box-shadow: inset 7px 7px 40px 0 rgba(0, 0, 0, 0.692);
 }
 
 #title {
     color: #e9e2e1;
-    font-size: 1.3rem;
-    letter-spacing: 0.4rem;
-    text-align: center;
+    font-size: 1.5vw;
+    text-transform: uppercase;
 }
 
 hr {
-    width: 10rem;
+    width: 10vw;
     border-style: solid;
     background-color: #e9e2e1;
-    margin-bottom: 4rem;
+    margin-top: -1vw;
 }
 
 #counterMain {
+    font-size: 1.5vw;
+    text-transform: uppercase;
     color: #e9e2e1;
-    font-size: 1.3rem;
-    letter-spacing: 0.4rem;
-    text-align: center;
-    margin-bottom: 2rem;
 }
 
-#counter{
+#counter {
+    font-size: 1.5vw;
+    text-transform: uppercase;
     color: #e9e2e1;
 }
 
@@ -40,63 +55,52 @@ hr {
     animation-name: slide;
     position: relative;
     animation-iteration-count: infinite;
-    top: -6rem;
-    left: -22rem;
+    top: 0vw;
+    left: 0vw;
 }
 
 @keyframes slide {
-    0% {color: blue;
-        top: -6rem;
-        left: -22rem;
-        
-
+    0% {
+        color: blue;
+        top: 0vw;
+        left: 6vw;
     }
     20% {
         color: yellow;
-        top: -6rem;
-        left: 0;
+        top: -5vw;
+        left: 40vw;
     }
-    50% { color: red;
-        top: -6rem;
-        left: 22rem;
+    50% {
+        color: red;
+        top: 0vw;
+        left: 80vw;
     }
-    70% {color: green;
-        top: -6rem;
-        left: 0rem;
+    70% {
+        color: green;
+        top: -5vw;
+        left: 40vw;
     }
-    100% {color:blue;
-        top: -6rem;
-        left: -22rem;
+    100% {
+        color: blue;
+        top: 0vw;
+        left: 6vw;
     }
-}
-
-.circle {
-    /* opacity: 0.8; */
-    display: block;
-    width: 30rem;
-    height: 30rem;
-    background: #283018;
-    /* background-image: url("images/circles-and-roundabouts.png");
-    /* background-repeat: repeat; */
-    /* background-blend-mode: multiply; */
-    border-radius: 50%;
-    box-shadow: inset 7px 7px 40px 0 rgba(0, 0, 0, 0.692);
 }
 
 #top {
-    display: block;
+    display: flex;
 }
 
 #blue {
-    width: 10rem;
-    height: 10rem;
+    width: 10vw;
+    height: 10vw;
+    background-size: 10vw;
     background-image: url("images/blue.svg");
-    background-size: 10rem;
     background-repeat: no-repeat;
     background-color: transparent;
     position: relative;
-    top: 5rem;
-    left: 3.5rem;
+    top: 4vw;
+    left: 2vw;
     filter: drop-shadow(5px 5px 10px #000000);
     outline: none;
     box-shadow: none;
@@ -105,15 +109,10 @@ hr {
 #blue:active {
     outline: none;
     box-shadow: none;
-    width: 10rem;
-    height: 10rem;
+    background-size: 10vw;
     background-image: url("images/bluepressed.svg");
-    background-size: 10rem;
     background-repeat: no-repeat;
     background-color: transparent;
-    position: relative;
-    top: 5.2rem;
-    left: 3.7rem;
     filter: drop-shadow(2px 2px 5px #000000);
 }
 
@@ -127,30 +126,25 @@ hr {
 #yellow {
     box-shadow: none;
     outline: none;
-    width: 10rem;
-    height: 10rem;
+    width: 10vw;
+    height: 10vw;
+    background-size: 10vw;
     background-image: url("images/yellow.svg");
-    background-size: 10rem;
     background-repeat: no-repeat;
     background-color: transparent;
     position: relative;
-    top: 5rem;
-    left: 3.5rem;
+    top: 4vw;
+    left: -2vw;
     filter: drop-shadow(-5px 5px 10px #000000);
 }
 
 #yellow:active {
     box-shadow: none;
     outline: none;
-    width: 10rem;
-    height: 10rem;
     background-image: url("images/yellowpressed.svg");
-    background-size: 10rem;
+    background-size: 10vw;
     background-repeat: no-repeat;
     background-color: transparent;
-    position: relative;
-    top: 5.2rem;
-    left: 3.7rem;
     filter: drop-shadow(-2px 2px 5px #000000);
 }
 
@@ -161,234 +155,22 @@ hr {
 }
 
 #bottom {
-    display: block;
-}
-
-#green {
-    box-shadow: none;
-    outline: none;
-    border: 0;
-    width: 10rem;
-    height: 10rem;
-    background-image: url("images/green.svg");
-    background-size: 10rem;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    position: relative;
-    top: 5.5rem;
-    left: 3.5rem;
-    filter: drop-shadow(-5px -5px 10px #000000);
-}
-
-#green:active {
-    box-shadow: none;
-    outline: none;
-    border: 0;
-    width: 10rem;
-    height: 10rem;
-    background-image: url("images/greenpressed.svg");
-    background-size: 10rem;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    position: relative;
-    top: 5.5rem;
-    left: 3.5rem;
-    filter: none;
-}
-
-#green:focus {
-    box-shadow: none;
-    outline: none;
-    border: 0;
-}
-
-#red {
-    box-shadow: none;
-    outline: none;
-    border: 0;
-    width: 10rem;
-    height: 10rem;
-    background-image: url("images/red.svg");
-    background-size: 10rem;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    position: relative;
-    top: 5.5rem;
-    left: 3.5rem;
-    filter: drop-shadow(5px -5px 10px #000000);
-}
-
-#red:active {
-    box-shadow: none;
-    outline: none;
-    border: 0;
-    width: 10rem;
-    height: 10rem;
-    background-image: url("images/redpressed.svg");
-    background-size: 10rem;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    position: relative;
-    top: 5.5rem;
-    left: 3.5rem;
-    filter: none;
-}
-
-#red:focus {
-    box-shadow: none;
-    outline: none;
-    border: 0;
-}
-
-.start {
-    margin-bottom: 0.5rem;
-    float: left;
-}
-
-
-
-.row {
-    width: 23rem;
-    text-align: center;
-}
-
-label {
-    top: -15.5rem;
-    left: 4rem;
-}
-
-.switch {
-    position: relative;
-    display: block;
-    width: 4rem;
-    height: 2rem;
-    border-radius: 3rem;
-    border-style: solid;
-    border-color: transparent;
-    overflow: hidden;
-    transform: rotate(-90deg);
-}
-
-#on {
-    position: relative;
-    top: -17rem;
-    left: 5.2rem;
-    color: #e9e2e1;
-}
-
-#off {
-    position: relative;
-    top: -14rem;
-    left: 6.9rem;
-    color: #e9e2e1;
-}
-
-.onOff {
-    position: relative;
-    top: 6rem;
-    left: -15rem;
-}
-
-.switch input {
-    display: none;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #8D607D;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 0.7rem;
-    width: 0.7rem;
-    transform: rotate(45deg);
-    left: 0.7rem;
-    bottom: 0.45rem;
-    background-color: #301828;
-    transition: .4s;
-}
-
-input:checked+.slider {
-    background-color: #729f98;
-}
-
-input:focus+.slider {
-    box-shadow: 0 0 20px #729f98;
-}
-
-input:checked+.slider:before {
-    transform: translateX(1.4rem) rotate(180deg);
-    background-color: #301828;
-}
-
-.strictMode {
-    width: 3rem;
-    height: 3rem;
-    background: #8D607D;
-    margin: 1rem 4rem;
-    border-radius: 100%;
-    position: relative;
-    box-shadow: 0px 1px 3px rbga(0, 0, 0, 0.5);
-    top: -16rem;
-    right: -30rem;
-}
-
-.strictMode label {
-    display: block;
-    width: 1.7rem;
-    height: 1.7rem;
-    border-radius: 100px;
-    transition: all .5s ease;
-    cursor: pointer;
-    position: absolute;
-    top: 0.6rem;
-    left: 0.7rem;
-    z-index: 1;
-    background: #729f98;
-    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.5);
-}
-
-.strictMode input[type=checkbox]:checked+label {
-    background: #301828;
-}
-
-#selectStrict {
-    display: none;
-}
-
-#modeName {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-self: center;
-    position: relative;
-    top: -16rem;
-    right: -33rem;
-    width: 5rem;
-    color: #e9e2e1;
 }
 
-#mode {
-    align-self: center;
+.mid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #startBtn {
     background-color: #8D607D;
     position: relative;
-    top: -5.5rem;
-    left: 13rem;
-    width: 2rem;
-    height: 2rem;
+    top: 1vw;
+    left: 0.2vw;
+    width: 3vw;
+    height: 3vw;
     transform: rotate(45deg);
     transition: transform 0.5s;
     filter: drop-shadow(0px 0px 10px #000000);
@@ -409,4 +191,199 @@ input:checked+.slider:before {
     box-shadow: none;
     filter: none;
     transform: rotate(90deg);
+}
+
+#green {
+    box-shadow: none;
+    outline: none;
+    border: 0;
+    width: 10vw;
+    height: 10vw;
+    background-size: 10vw;
+    background-image: url("images/green.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    position: relative;
+    top: -2vw;
+    left: -2vw;
+    filter: drop-shadow(-5px -5px 10px #000000);
+}
+
+#green:active {
+    box-shadow: none;
+    outline: none;
+    border: 0;
+    background-size: 10vw;
+    background-image: url("images/greenpressed.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    filter: none;
+}
+
+#green:focus {
+    box-shadow: none;
+    outline: none;
+    border: 0;
+}
+
+#red {
+    box-shadow: none;
+    outline: none;
+    border: 0;
+    width: 10vw;
+    height: 10vw;
+    background-size: 10vw;
+    background-image: url("images/red.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    position: relative;
+    top: -2vw;
+    left: 2.3vw;
+    filter: drop-shadow(5px -5px 10px #000000);
+}
+
+#red:active {
+    box-shadow: none;
+    outline: none;
+    border: 0;
+    background-size: 10vw;
+    background-image: url("images/redpressed.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    filter: none;
+}
+
+#red:focus {
+    box-shadow: none;
+    outline: none;
+    border: 0;
+}
+
+label {
+    top: 11vw;
+    left: 4.4vw;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 6vw;
+    height: 3vw;
+    border-radius: 20vw;
+    border-style: solid;
+    border-color: transparent;
+    overflow: hidden;
+    transform: rotate(-90deg);
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #8D607D;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.3vw;
+    width: 1.3vw;
+    transform: rotate(45deg);
+    left: 1vw;
+    bottom: 0.6vw;
+    background-color: #301828;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #729f98;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 20px #729f98;
+}
+
+input:checked+.slider:before {
+    transform: translateX(2vw) rotate(180deg);
+    background-color: #301828;
+}
+
+#on {
+    position: relative;
+    top: 8vw;
+    left: 4.5vw;
+    color: #e9e2e1;
+    letter-spacing: 0.4vw;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+}
+
+#off {
+    position: relative;
+    bottom: -13vw;
+    left: 4.6vw;
+    color: #e9e2e1;
+    letter-spacing: 0.4vw;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+}
+
+.onOff {
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+}
+
+.strictMode {
+    width: 3vw;
+    height: 3vw;
+    background: #8D607D;
+    border-radius: 100%;
+    position: relative;
+    top: 11vw;
+    right: -8.4vw;
+}
+
+.strictMode label {
+    display: block;
+    width: 1.7vw;
+    height: 1.7vw;
+    border-radius: 100px;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 0.6vw;
+    left: 0.6vw;
+    z-index: 1;
+    background: #729f98;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.strictMode input[type=checkbox]:checked+label {
+    background: #301828;
+}
+
+#selectStrict {
+    display: none;
+}
+
+#modeName {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.4vw;
+    position: relative;
+    top: 10vw;
+    right: -6vw;
+    width: 5vw;
+    color: #e9e2e1;
+    font-size: 1.5vw;
+    text-transform: uppercase;
 }

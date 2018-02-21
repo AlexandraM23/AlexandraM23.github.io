@@ -1,14 +1,15 @@
 body {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     margin: auto;
     padding-top: 3rem;
     font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
     background-color: #aa863a;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
-    /* background-image: url("images/doodles.png");
-    background-repeat: repeat;
-    background-blend-mode: multiply; */
+  
 }
 
 #title {
@@ -26,13 +27,10 @@ hr {
 }
 
 .circle {
-    /* opacity: 0.8; */
+   
     width: 30rem;
     height: 30rem;
     background: #AA4E3A;
-    /* background-image: url("images/circles-and-roundabouts.png");
-    /* background-repeat: repeat; */
-    /* background-blend-mode: multiply; */
     border-radius: 45%;
     box-shadow: 
     0 4px 8px 0 rgba(0, 0, 0, 0.2), 
@@ -63,7 +61,7 @@ svg {
     opacity: 0.8;
     filter: drop-shadow(2px 2px 0.5px #283018);
     color: #7D863A;
-    cursor: pointer; 5  /  4 
+    cursor: pointer;
 
 }
 
@@ -96,8 +94,7 @@ svg:active {
     top: -1.5rem;
     filter: drop-shadow(2px 2px 2px #2830188c);
     z-index: 1;
-    /* filter: drop-shadow(2px 4px px #283018);
-    filter: drop-shadow(4px 10px 8px #283018); */
+
 }
 
 @keyframes shakeLeaf1 {
@@ -184,7 +181,6 @@ svg:active {
 }
 
 #t4 {
-    /* width: 5.5rem; */
     animation-name: shakeLeaf4;
     animation-iteration-count: infinite;
     animation-duration: 5s;

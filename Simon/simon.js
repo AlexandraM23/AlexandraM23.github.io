@@ -66,7 +66,7 @@ var restart = function () {
     resetPattern();
     resetInput();
     $("#win").hide();
-    $("#counterMain").css("color", "#e9e2e1");
+    $("#counterMain, #counter").css("color", "#e9e2e1");
     $("#counter").text("00");
     disableColorBtns();
     nextMove();
@@ -92,7 +92,7 @@ var handleColorMouseUp = function () {
         checkUserInput();
 
         if (input.length == pattern.length) {
-            if (pattern.length == 21) {
+            if (pattern.length == 2) {
                 setTimeout(handleUserWin, 500);
             } else {
                 resetColors();
@@ -111,14 +111,14 @@ var checkUserInput = function () {
         if (input[i] != pattern[i]) {
             if (strict) {
                 disableColorBtns();
-                setTimeout(notifyUserOfMistake, 500);
-                setTimeout(restart, 1750);
+                notifyUserOfMistake();
+                setTimeout(restart, 1600);
             } else {
                 resetColors();
                 resetInput();
                 disableColorBtns();
-                setTimeout(notifyUserOfMistake, 500);
-                setTimeout(displayPattern, 1750);
+                notifyUserOfMistake();
+                setTimeout(displayPattern, 1600);
             }
         }
     }
@@ -135,8 +135,8 @@ var notifyUserOfMistake = function () {
         $("#startBtn").css('background-color', '#8D607D');
     };
 
-    var nFlashes = 5;
-    var flashDuration = 400;
+    var nFlashes = 3;
+    var flashDuration = 290;
 
     for (var i = 1; i <= nFlashes; i++) {
         var nextOn = i * flashDuration * 2;
@@ -226,7 +226,7 @@ var resetColors = function () {
 var handleUserWin = function () {
 
     disableColorBtns();
-    $("#counterMain").css("color", "#aa863a")
+    $("#counterMain, #counter").css("color", "#aa863a")
     $("#win").show();
     setTimeout(restart, 5000);
 

@@ -43,11 +43,16 @@ var setUserChoice = function (event) {
 
 var goToGame = function () {
 
-    $(".choice").fadeOut(300);
-    $(".game").fadeIn(800);
-    $(".result").fadeIn().text("");
+    $(".choice").fadeOut(450);
+    setTimeout(fadeInGame, 400);
+   
 
 };
+
+var fadeInGame = function(){
+    $(".result").fadeIn(300).text("");
+    $(".game").fadeIn(300);
+}
 
 
 var handleUserMove = function (clickedSquareNumber) {
@@ -125,13 +130,13 @@ var styleSquares = function (whichSquares) { //whichSquares will either be "all"
         var sq3 = "#" + winOptions[whichSquares][2];
 
         var squaresToStyle = sq1 + ", " + sq2 + ", " + sq3;
-        
+
         flash(squaresToStyle);
     }
 };
 
 
-var flash = function(id){
+var flash = function (id) {
 
     var styleOn = function () {
         $(id).css({
@@ -140,25 +145,25 @@ var flash = function(id){
             "outline-color": "#AA3A5E"
         });
     };
-    
-    var styleOff = function(){
+
+    var styleOff = function () {
         $(id).css({
             "outline": "none"
         });
     }
-    
+
     var nFlashes = 5;
     var flashDuration = 400;
 
-    for(var i=1; i <= nFlashes; i++){
-        var nextOn = i*flashDuration*2;
+    for (var i = 1; i <= nFlashes; i++) {
+        var nextOn = i * flashDuration * 2;
         setTimeout(styleOn, nextOn);
-        setTimeout(styleOff, nextOn+flashDuration);
+        setTimeout(styleOff, nextOn + flashDuration);
     }
 }
 
 var displayMessage = function (whatMessage) {
-       
+
     if (whatMessage == "draw") {
         $(".result").text("Yay! Everybody wins...");
     } else if (whatMessage == "user") {
@@ -266,11 +271,15 @@ var currentNumberOfMoves = function () {
 };
 
 var restart = function () {
-    $(".result").fadeOut(300);
-    $(".game").fadeOut(300);
-    $(".choice").fadeIn(1000);
+    $(".result").fadeOut(600);
+    $(".game").fadeOut(600);
+    setTimeout(fadeInChoice, 550);
     resetBoard();
     resetDisplay();
+};
+
+var fadeInChoice = function(){
+    $(".choice").fadeIn(300);
 };
 
 var resetBoard = function () {
@@ -284,7 +293,7 @@ var resetDisplay = function () {
     $("img.finalX").fadeOut();
     $("img.finalO").fadeOut();
     $(".game").fadeOut();
-    
+
 }
 
 
