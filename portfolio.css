@@ -1,9 +1,10 @@
-.selector-for-some-widget {
+/* .selector-for-some-widget {
     box-sizing: content-box;
-}
+} */
 
 body {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding-top: 3rem;
     font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
     background-color: #e9e2e1;
@@ -50,34 +51,47 @@ body {
 }
 
 #about {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #729f98;
-    color: #e9e2e1;
-    font-size: 1.3rem;
-    line-height: 3.5rem;
-    letter-spacing: 0.3rem;
-    text-align: left;
-    text-transform: uppercase;
     margin: auto;
-    padding-top: 5rem;
-    padding-bottom: 4rem;
-    padding-left: 10rem;
-    padding-right: 12rem;
+    width: 100%;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: left;
+    margin-right: 1vw;
+    margin-left: 2vw;
+    width: 100%;
+    font-size: 1.5vw;;
+    color: #e9e2e1;
+    text-transform: uppercase;
+    line-height: 220%;
+    letter-spacing: 0.3em;
 }
 
 .profile-image {
-    display: block;
-    float: right;
+    
     border-radius: 50%;
-    border-width: 0.5rem;
+    border-width: 1vw;
     border-style: solid;
     border-color: #e9e2e1e7;
-    margin-left: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-right: 2rem;
-    width: 30%;
+    width: 90%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -87,33 +101,27 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding-top: 5rem;
-    padding-bottom: 4rem;
-    padding-left: 10rem;
-    padding-right: 12rem;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    padding-right: 5vw;
+    padding-left: 5vw;
     background-color: #aa863a;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    z-index: 1;
-}
-
-ul {
-    list-style: none;
 }
 
 .icon {
     display: flex;
-    width: 30rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 }
 
 #pomodoroIcon {
     width: 45%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 }
 
 #pomodoroIcon:hover {
@@ -124,8 +132,8 @@ ul {
 
 #simonIcon {
     width: 60%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 }
 
 #simonIcon:hover {
@@ -136,8 +144,8 @@ ul {
 
 #calculatorIcon {
     width: 40%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 2vw;
+    margin-bottom: 3vw;
 }
 
 #calculatorIcon:hover {
@@ -178,17 +186,17 @@ ul {
 
 #xIcon {
     position: relative;
-    top: 2rem;
-    left: -3rem;
+    top: 4vw;
+    left: -4vw;
     width: 30%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 2vw;
+    margin-bottom: 4vw;
 }
 
 #oIcon {
     position: relative;
-    top: -3rem;
-    left: 3rem;
+    top: -4vw;
+    left: 4vw;
     width: 30%;
 }
 
@@ -221,22 +229,20 @@ a:focus {
 }
 
 #contact {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color:  #283018;
     margin: auto;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    
-    background-color: #283018;
-    box-shadow: inset 7px 7px 40px 0 rgba(0, 0, 0, 0.383);
-
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.3rem;
-    font-size: 1.2rem;
-    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-    color: #e9e2e1b7;
+    width: 100%;
+    padding-top: 4em;
+    padding-bottom: 4em;
+   
 }
 
-.fa-linkedin-in, .fa-github{
-     color: #aa863a;
+.fa-linkedin-in,
+.fa-github {
+    color: #aa863a;
 }

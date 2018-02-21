@@ -22,14 +22,12 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="portfolio.css">
-    
+
 
 
 </head>
 
 <body data-spy="scroll" data-target="#navbar">
-
-    <script src="portfolio.js"></script>
 
     <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="navbar" role="navigation">
 
@@ -71,70 +69,86 @@
 
 
     <div class="container-fluid" id="about">
-        <img class="profile-image" src="https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/17457922_10206556223824264_2593171580238254240_n.jpg?oh=813df266a061aa01385b3a73142059ee&oe=5B10CAC3"
-            alt="Profile picture of Ali" title="Picture of Ali on graduation day">
-
-        <div>
-            Hey, I'm Ali! I'm a self-taught developer currently working with HTML, CSS and JavaScript.</br>
-            </br> Check out my tiny projects and...
+        <div class="container row">
+            <div class="col-8">
+                <div class="row">
+                    Hey, I'm Ali! I'm a self-taught developer currently working with HTML, CSS and JavaScript.
+                </div>
+                <div class="row">
+                    Check out my tiny projects and...
+                </div>
+                <div class="row">
+                    ...check back in for some jumbo projects!
+                </div>
+            </div>
+            <div class="col-4">
+                <img class="profile-image" src="https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/17457922_10206556223824264_2593171580238254240_n.jpg?oh=813df266a061aa01385b3a73142059ee&oe=5B10CAC3"
+                    alt="Profile picture of Ali">
+            </div>
         </div>
-        <div>...check back in for some jumbo projects!</div>
-
-
     </div>
 
     <div class="container-fluid" id="projects">
+        <div class="row">
 
-        <div class="icon">
-            <a href="Pomodoro/Pomodoro.html">
-                <img src="images/pomodoro.png" alt="Pomodoro Icon" id="pomodoroIcon"></img>
-            </a>
-            <a href="Pomodoro/Pomodoro.html"> Pomodoro Timer </a>
-        </div>
+            <div class="col-6 icon">
+                <a href="Pomodoro/Pomodoro.html">
+                    <img src="images/pomodoro.png" alt="Pomodoro Icon" id="pomodoroIcon"></img>
+                </a>
+                <a href="Pomodoro/Pomodoro.html"> Pomodoro Timer </a>
+            </div>
 
-        <div class="icon">
-            <a href="Simon/simon.html">
-                <img src="images/simon.png" alt="Simon Icon" id="simonIcon"></img>
-            </a>
-            <a href="Simon/simon.html">Simon Game</a>
-        </div>
-
-        <div class="icon tic">
-            <a href="Tic/tic.html">
-                <img src="images/Tic-X.png" alt="Tic X Icon" id="xIcon" class="ticIcons"></img>
-            </a>
-            <a href="Tic/tic.html">
-
-                <img src="images/Tic-O.png" alt="Tic O Icon" id="oIcon" class="ticIcons"></img>
-            </a>
-            <a href="Tic/tic.html">Tic Tac Toe</a>
-        </div>
-
-        <div class="icon">
-            <a href="Calculator/calculator.html">
-                <img src="images/calculator.png" alt="Calculator Icon" id="calculatorIcon"></img>
-            </a>
-            <a href="Calculator/calculator.html">Calculator</a>
+            <div class="col-6 icon">
+                <a href="Simon/simon.html">
+                    <img src="images/simon.png" alt="Simon Icon" id="simonIcon"></img>
+                </a>
+                <a href="Simon/simon.html">Simon Game</a>
+            </div>
 
         </div>
+
+        <div class="row">
+
+            <div class="col-6 icon">
+                <a href="Tic/tic.html">
+                    <img src="images/Tic-X.png" alt="Tic X Icon" id="xIcon" class="ticIcons"></img>
+                </a>
+                <a href="Tic/tic.html">
+
+                    <img src="images/Tic-O.png" alt="Tic O Icon" id="oIcon" class="ticIcons"></img>
+                </a>
+                <a href="Tic/tic.html">Tic Tac Toe</a>
+            </div>
+
+            <div class="col-6 icon">
+                <a href="Calculator/calculator.html">
+                    <img src="images/calculator.png" alt="Calculator Icon" id="calculatorIcon"></img>
+                </a>
+                <a href="Calculator/calculator.html">Calculator</a>
+            </div>
+
+        </div>
+
     </div>
 
 
     <div class="container-fluid" id="contact">
 
-        <span>You can see more of my projects on </span>
-        <a class="button social" href="https://github.com/AlexandraM23" target='_blank'>
-            <i class="fab fa-github"></i>
-        </a>
-        </br>
-        <span>And drop me a message on </span>
-        <a class="button social" href="https://www.linkedin.com/in/alexandra-margarint-6bb7a984/" target='_blank'>
-            <i class="fab fa-linkedin-in"></i>
-        </a>
-        
-        <!-- <div class="footer">
-            see you soon!
-        </div> -->
+        <div class="row">
+            <span>You can see more of my projects on </span>
+            <a class="button social" href="https://github.com/AlexandraM23" target='_blank'>
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+
+        <div class="row">
+            <span>And drop me a message through </span>
+            <a class="button social" href="https://www.linkedin.com/in/alexandra-margarint-6bb7a984/" target='_blank'>
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+
+
     </div>
 </body>
 
