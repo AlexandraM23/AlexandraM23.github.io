@@ -92,7 +92,7 @@ var handleColorMouseUp = function () {
         checkUserInput();
 
         if (input.length == pattern.length) {
-            if (pattern.length == 2) {
+            if (pattern.length == 21) {
                 setTimeout(handleUserWin, 500);
             } else {
                 resetColors();
